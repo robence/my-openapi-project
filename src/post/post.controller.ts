@@ -36,7 +36,7 @@ export class PostController {
   }
 
   @Delete(':id')
-  remove(@Param('id') id: string) {
+  remove(@Param('id') id: number) {
     return this.postService.remove(+id);
   }
 }
